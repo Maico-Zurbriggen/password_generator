@@ -1,9 +1,11 @@
+/*TITULO*/
 .title {
   font-family: var(--primary-font);
   color: var(--text);
   text-align: center;
 }
 
+/*CAMPO DE CONTRASEÑA*/
 .field {
   width: 100%;
   display: flex;
@@ -16,5 +18,20 @@
 .field input {
   width: 100%;
   padding: 10px;
+  border: 1px solid var(--surface);
+}
+
+/*INDICADOR DE SEGURIDAD*/
+.indicator-security {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicator-security-line {
+  width: 400px;
+  height: 10px;
+  border-radius: 10px;
   border: 1px solid var(--surface);
 }

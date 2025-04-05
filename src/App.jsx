@@ -1,5 +1,5 @@
 import './App.css'
-import { Field } from './components'
+import { Field, IndicatorSecurity, ModalGenerator } from './components'
 
 function App() {
 
@@ -7,9 +7,11 @@ function App() {
     <>
     <header>
       <h1 className='title'>Password Generator</h1>
+      <ModalGenerator />
     </header>
     <main>
-      <Field type="text" label="Enter Password:" name="password"/>
+      <Field type="password" label="Enter Password:" placeholder="2444666668888888" name="password"/>
+      <IndicatorSecurity />
     </main>
     </>
   )
