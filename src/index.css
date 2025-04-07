@@ -57,3 +57,19 @@ header {
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
+
+button {
+  border: 1px solid var(--surface);
+  border-radius: 5px;
+  background-color: var(--background);
+  padding: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--surface);
+}
+
+.row {
+  flex-direction: row !important; 
+}

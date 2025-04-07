@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { ConfigurationGenerator } from "./ConfigurationGenerator";
 
-export const ModalGenerator = () => {
+export const ModalGenerator = ({ modifyPassword }) => {
   const modalRef = useRef(null);
 
   return (
@@ -14,7 +14,7 @@ export const ModalGenerator = () => {
           <h1>Modal Generator</h1>
         </header>
         <main>
-          <ConfigurationGenerator buttonText="Generar"/>
+          <ConfigurationGenerator modal={modalRef} buttonText="Generar" modifyPassword={modifyPassword}/>
         </main>
       </dialog>
     </>
