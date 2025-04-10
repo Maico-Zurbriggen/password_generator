@@ -57,16 +57,19 @@
 .indicator-security-line-item.low {
   width: 33%;
   background-color: var(--danger);
+  animation: low 1s ease-in-out;
 }
 
 .indicator-security-line-item.medium {
   width: 66%;
   background-color: var(--warning);
+  animation: medium 1s ease-in-out;
 }
 
 .indicator-security-line-item.high {
   width: 100%;
   background-color: var(--success);
+  animation: high 1s ease-in-out;
 }
 
 .indicator-security-text {
@@ -99,6 +102,7 @@
 
 .button-modal-form {
   width: 100%;
+  text-transform: uppercase;
 }
 
 input.range-input {
@@ -113,7 +117,19 @@ div.checkbox-field {
   justify-content: space-between;
 }
 
-/*ANIMACIONES
+
+/*MENSAJE AVISO DE COPIADO*/
+.aviso-copiado {
+  color: var(--success);
+  text-align: center;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+/*ANIMACIONES*/
 @keyframes low {
   from {
     width: 0%;
@@ -146,4 +162,3 @@ div.checkbox-field {
     background-color: var(--success);
   }
 }
-*/

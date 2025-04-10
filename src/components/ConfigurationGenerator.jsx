@@ -28,9 +28,9 @@ export const ConfigurationGenerator = ({ modal, buttonText, modifyPassword }) =>
       password += symbolsLetters.charAt(Math.floor(Math.random() * symbolsLetters.length));
     }
 
-    for (let i = 0; i < length; i++) {
+    while (password.length < length) {
       const randomIndex = Math.floor(Math.random() * characters.length);
-      password += characters.charAt(randomIndex); 
+      password += characters.charAt(randomIndex);
     }
 
     modal.current.close();

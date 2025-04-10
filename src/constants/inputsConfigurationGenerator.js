@@ -25,7 +25,7 @@ export const inputsConfigurationGenerator = [
   {
     type: "checkbox",
     name: "symbols",
-    label: "[!@#$%^&*()_+{}|:\\[\\];',./<>?]",
+    label: "@$!%*?&_-",
     initialValue: false,
     divClassName: "checkbox-field"
   }

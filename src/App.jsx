@@ -23,6 +23,12 @@ function App() {
 
   const copyPassword = () => {
     navigator.clipboard.writeText(password);
+    const avisoCopiado = document.querySelector(".aviso-copiado");
+    avisoCopiado.classList.add("show");
+
+    setTimeout(() => {
+      avisoCopiado.classList.remove("show");
+    }, 3000);
   }
 
   const verificatePassword = (password) => {
@@ -34,8 +40,6 @@ function App() {
       setSecurityPassword("low");
     } else if (password.length === 0) {
       setSecurityPassword("");
-    } else {
-      setSecurityPassword("invalid");
     }
   };
 
@@ -77,6 +81,7 @@ function App() {
           </div>
         </div>
         <IndicatorSecurity security={securityPassword} />
+        <p className="aviso-copiado">Password Copied</p>
       </main>
     </>
   );

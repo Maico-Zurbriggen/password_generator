@@ -2,5 +2,5 @@ export const charactersLetters = {
   uppercaseLetters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   lowercaseLetters: "abcdefghijklmnopqrstuvwxyz",
   numbersLetters: "0123456789",
-  symbolsLetters: "!@#$%^&*()_+~`|}{[]\\:;?><,./-="
+  symbolsLetters: "@$!%*?&_-"
 }

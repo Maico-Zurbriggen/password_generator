@@ -1,5 +1,9 @@
 export const levels = {
-  lowSecurity: /^[A-Za-z\d!@#$%^&*()_+~`|}{[\\\]:;?><,./-=]{6,}$/,
-  mediumSecurity: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d!@#$%^&*()_+~`|}{[\\\]:;?><,./-=]{8,}$/,
-  highSecurity: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+~`|}{[\\\]:;?><,./-=])[A-Za-z\d!@#$%^&*()_+~`|}{[\\\]:;?><,./-=]{10,}$/
+  //Seguridad baja: cualquier número de caracteres con 1 tipo de caracter entre minusculas, mayusculas, numeros y simbolos
+  lowSecurity: /^[A-Za-z\d!@#$%^&*()_+~`|}{[\\\]:;?><,./-=]+$/,
+  //Seguridad media: minimo 8 caracteres, con 3 combinaciones
+  mediumSecurity: /^(?=.*[a-z].*)(?=.*[A-Z].*)(?=.*[\d\W_].*).{8,}$/,
+  //Seguridad alta: minimo 8 caracteres, con las 4 combinaciones
+  highSecurity: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/
+
 }
