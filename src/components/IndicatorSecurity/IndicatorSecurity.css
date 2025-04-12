@@ -1,5 +1,6 @@
 /*CONTENEDOR*/
 .indicator-security {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +9,7 @@
 
 /*LINEA DE NIVEL DE SEGURIDAD*/
 .indicator-security-line {
-  width: 400px;
+  width: 100%;
   height: 10px;
   border-radius: 10px;
   border: 1px solid var(--surface);
