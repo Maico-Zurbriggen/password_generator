@@ -1,0 +1,13 @@
+/*INPUTS RANGE*/
+input.range-input {
+  padding: 0;
+  margin: 0;
+}
+
+/*INPUTS CHECKBOX*/
+div.checkbox-field {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

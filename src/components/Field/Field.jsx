@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Field.css";
 
 export const Field = ({ name, type = "text", label, placeholder, className, divClassName = "field", min, max, initialValue = ""}) => {
   const [value, setValue] = useState(initialValue);

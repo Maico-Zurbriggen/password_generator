@@ -1,4 +1,5 @@
-import { indicatorSecurityText } from "../constants";
+import { indicatorSecurityText } from "../../constants";
+import "./IndicatorSecurity.css";
 
 export const IndicatorSecurity = ({ security }) => {
 

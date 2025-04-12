@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-/*CAMPO DE CONTRASEÑA*/
+/*SECCION DE FORMULARIO*/
 .field {
   width: 100%;
   display: flex;
@@ -21,103 +21,6 @@
   border: 1px solid var(--surface);
 }
 
-/*INDICADOR DE SEGURIDAD*/
-.indicator-security {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-}
-
-.indicator-security-line {
-  width: 400px;
-  height: 10px;
-  border-radius: 10px;
-  border: 1px solid var(--surface);
-}
-
-.indicator-security-line.low {
-  border: 2px solid var(--danger);
-}
-
-.indicator-security-line.medium {
-  border: 2px solid var(--warning);
-}
-
-.indicator-security-line.high {
-  border: 2px solid var(--success);
-}
-
-.indicator-security-line-item {
-  width: 0%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.indicator-security-line-item.low {
-  width: 33%;
-  background-color: var(--danger);
-  animation: low 1s ease-in-out;
-}
-
-.indicator-security-line-item.medium {
-  width: 66%;
-  background-color: var(--warning);
-  animation: medium 1s ease-in-out;
-}
-
-.indicator-security-line-item.high {
-  width: 100%;
-  background-color: var(--success);
-  animation: high 1s ease-in-out;
-}
-
-.indicator-security-text {
-  font-size: 16px;
-  color: var(--text);
-  text-align: center; 
-}
-
-.indicator-security-text.low {
-  color: var(--danger);
-}
-
-.indicator-security-text.medium {
-  color: var(--warning); 
-}
-
-.indicator-security-text.high {
-  color: var(--success); 
-}
-
-/*GENERADOR DE CONTRASEÑAS*/
-.modal-form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 10px;
-}
-
-.button-modal-form {
-  width: 100%;
-  text-transform: uppercase;
-}
-
-input.range-input {
-  padding: 0;
-  margin: 0;
-}
-
-div.checkbox-field {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
 /*MENSAJE AVISO DE COPIADO*/
 .aviso-copiado {
   color: var(--success);
@@ -127,38 +30,4 @@ div.checkbox-field {
 
 .show {
   opacity: 1;
-}
-
-/*ANIMACIONES*/
-@keyframes low {
-  from {
-    width: 0%;
-    background-color: var(--background);
-  }
-  to {
-    width: 33%;
-    background-color: var(--danger);
-  }
-}
-
-@keyframes medium {
-  from {
-    width: 33%;
-    background-color: var(--danger);
-  }
-  to {
-    width: 66%;
-    background-color: var(--warning);
-  }
-}
-
-@keyframes high {
-  from {
-    width: 66%;
-    background-color: var(--warning);
-  }
-  to {
-    width: 100%;
-    background-color: var(--success);
-  }
 }
